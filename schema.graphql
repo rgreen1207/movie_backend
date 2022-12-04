@@ -36,4 +36,5 @@ type Mutation {
     createMovie(title: String!, likes: Int!, reason: String): MovieResult!
     deleteMovie(movieId: ID!): DeleteMovieResult!
     updateLikes(movieId: ID!, newLikes: Int!): MovieResult!
+    changeReason(movieId: ID!, newReason: String!): MovieResult!
 }

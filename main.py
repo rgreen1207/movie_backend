@@ -1,11 +1,11 @@
-from api import app, db
-from api import models
+from app import app, db
+from app import models
 
 from ariadne import load_schema_from_path, make_executable_schema, \
     graphql_sync, snake_case_fallback_resolvers, ObjectType
 from ariadne.constants import PLAYGROUND_HTML
 from flask import request, jsonify
-from api.queries import resolve_movies, resolve_movie
+from app.queries import resolve_movies, resolve_movie
 
 query = ObjectType("Query")
 
